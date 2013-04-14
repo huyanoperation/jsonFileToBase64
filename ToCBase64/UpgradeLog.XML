@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="ToCBase64">
+</Property><Property Name="Solution File" Value="C:\work\JsonFileToBase64\ToCBase64\ToCBase64.sln">
+</Property><Property Name="User Options File" Value="C:\work\JsonFileToBase64\ToCBase64\ToCBase64.suo">
+</Property><Property Name="Date" Value="2013年4月14日">
+</Property><Property Name="Time" Value="18:02">
+</Property></Properties><Event ErrorLevel="0" Project="" Source="ToCBase64.sln" Description="File successfully backed up as C:\work\JsonFileToBase64\ToCBase64\ToCBase64.sln.old">
+</Event><Event ErrorLevel="0" Project="" Source="ToCBase64.suo" Description="File successfully backed up as C:\work\JsonFileToBase64\ToCBase64\ToCBase64.suo.old">
+</Event><Event ErrorLevel="0" Project="ToCBase64" Source="ToCBase64.vcproj" Description="Converting project file 'C:\work\JsonFileToBase64\ToCBase64\ToCBase64.vcproj'.">
+</Event><Event ErrorLevel="1" Project="ToCBase64" Source="ToCBase64.vcproj" Description="VCWebServiceProxyGeneratorTool is no longer supported. The tool has been removed from your project settings.">
+</Event><Event ErrorLevel="0" Project="ToCBase64" Source="ToCBase64.vcproj" Description="Done converting to new project file 'C:\work\JsonFileToBase64\ToCBase64\ToCBase64.vcxproj'.">
+</Event><Event ErrorLevel="3" Project="ToCBase64" Source="ToCBase64.vcproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="" Source="ToCBase64.sln" Description="Solution converted successfully">
+</Event><Event ErrorLevel="3" Project="" Source="ToCBase64.sln" Description="Converted">
+</Event></UpgradeLog>
