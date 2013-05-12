@@ -39,7 +39,7 @@ void findfile()
 			else
 			{
 				string outStr;
-				unsigned char buffer[102400];
+				unsigned char buffer[202400];
 				memcpy( buffer, file.c_str(),file.size() );
 				CBase64::Encode( buffer, file.size(),  outStr );
 				writeTestFile( fd.cFileName, outStr );
