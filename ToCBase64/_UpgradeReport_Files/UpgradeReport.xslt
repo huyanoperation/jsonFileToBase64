@@ -1,7 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
-<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl='urn:schemas-microsoft-com:xslt'>
+<?xml version="1.0" encoding="utf-8"?>
+<xsl:stylesheet version="1.0" xmlns:xsl="http://www.w3.org/1999/XSL/Transform" xmlns:msxsl="urn:schemas-microsoft-com:xslt">
 
-    <xsl:key name="ProjectKey" match="Event" use="@Project" />
+    <xsl:key name="ProjectKey" match="Event" use="@Project"/>
 
     <xsl:template match="Events" mode="createProjects">
         <projects>
@@ -60,12 +60,12 @@
     <xsl:for-each select="project">
     <xsl:sort select="@Name" order="ascending"/>
         <h2>
-        <xsl:if test="@solution"><a _locID="Solution">Solution</a>: <xsl:value-of select="@solution"/></xsl:if>
-        <xsl:if test="not(@solution)"><a _locID="Project">Project</a>: <xsl:value-of select="@name"/>
+        <xsl:if test="@solution"><a _locID="Solution">解决方案</a>: <xsl:value-of select="@solution"/></xsl:if>
+        <xsl:if test="not(@solution)"><a _locID="Project">项目</a>: <xsl:value-of select="@name"/>
             <xsl:for-each select="source">
                 <xsl:variable name="Hyperlink" select="@name"/>
             <xsl:for-each select="event[@error-level='4']">
-            &#32;<A class="note"><xsl:attribute name="HREF"><xsl:value-of select="$Hyperlink"/></xsl:attribute><xsl:value-of select="@description"/></A>
+             <A class="note"><xsl:attribute name="HREF"><xsl:value-of select="$Hyperlink"/></xsl:attribute><xsl:value-of select="@description"/></A>
                 </xsl:for-each>
             </xsl:for-each>
         </xsl:if>
@@ -73,10 +73,10 @@
 
         <table cellpadding="2" cellspacing="0" width="98%" border="1" bordercolor="white" class="infotable">
             <tr>
-                <td nowrap="1" class="header" _locID="Filename">Filename</td>
-                <td nowrap="1" class="header" _locID="Status">Status</td>
-                <td nowrap="1" class="header" _locID="Errors">Errors</td>
-                <td nowrap="1" class="header" _locID="Warnings">Warnings</td>
+                <td nowrap="1" class="header" _locID="Filename">文件名</td>
+                <td nowrap="1" class="header" _locID="Status">状态</td>
+                <td nowrap="1" class="header" _locID="Errors">错误</td>
+                <td nowrap="1" class="header" _locID="Warnings">警告</td>
             </tr>
 
             <xsl:for-each select="source">
@@ -87,16 +87,16 @@
 
                 <tr class="row">
                     <td class="content">
-                        <A HREF="javascript:"><xsl:attribute name="onClick">javascript:document.images['<xsl:value-of select="$source-id"/>'].click()</xsl:attribute><IMG border="0" _locID="IMG.alt" _locAttrData="alt"  alt="expand/collapse section" class="expandable" height="11" onclick="changepic()" src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9" ><xsl:attribute name="name"><xsl:value-of select="$source-id"/></xsl:attribute><xsl:attribute name="child">src<xsl:value-of select="$source-id"/></xsl:attribute></IMG></A>&#32;<xsl:value-of select="@name"/> 
+                        <A HREF="javascript:"><xsl:attribute name="onClick">javascript:document.images['<xsl:value-of select="$source-id"/>'].click()</xsl:attribute><IMG border="0" _locID="IMG.alt" _locAttrData="alt" alt="展开/折叠节" class="expandable" height="11" onclick="changepic()" src="_UpgradeReport_Files/UpgradeReport_Plus.gif" width="9"><xsl:attribute name="name"><xsl:value-of select="$source-id"/></xsl:attribute><xsl:attribute name="child">src<xsl:value-of select="$source-id"/></xsl:attribute></IMG></A> <xsl:value-of select="@name"/> 
                     </td>
                     <td class="content">
                         <xsl:if test="count(event[@error-level='3'])=1">
                             <xsl:for-each select="event[@error-level='3']">
-                            <xsl:if test="@description='Converted'"><a _locID="Converted1">Converted</a></xsl:if>
+                            <xsl:if test="@description='Converted'"><a _locID="Converted1">已转换</a></xsl:if>
                             <xsl:if test="@description!='Converted'"><xsl:value-of select="@description"/></xsl:if>
                             </xsl:for-each>
                         </xsl:if>
-                        <xsl:if test="count(event[@error-level='3'])!=1 and count(event[@error-level='3' and @description='Converted'])!=0"><a _locID="Converted2">Converted</a>
+                        <xsl:if test="count(event[@error-level='3'])!=1 and count(event[@error-level='3' and @description='Converted'])!=0"><a _locID="Converted2">已转换</a>
                         </xsl:if>
                     </td>
                     <td class="content"><xsl:value-of select="count(event[@error-level='2'])"/></td>
@@ -109,7 +109,7 @@
                     <td colspan="7">
                         <table width="97%" border="1" bordercolor="#dcdcdc" rules="cols" class="issuetable">
                             <tr>
-                                <td colspan="7" class="issuetitle" _locID="ConversionIssues">Conversion Report - <xsl:value-of select="@name"/>:</td>
+                                <td colspan="7" class="issuetitle" _locID="ConversionIssues">转换报告 - <xsl:value-of select="@name"/>:</td>
                             </tr>
 
                             <xsl:for-each select="event[@error-level!='3']">
@@ -130,15 +130,15 @@
             <tr valign="top">
                 <td class="foot">
                     <xsl:if test="count(source)!=1">
-                        <xsl:value-of select="count(source)"/><a _locID="file1"> files</a>
+                        <xsl:value-of select="count(source)"/><a _locID="file1"> 个文件</a>
                     </xsl:if>
                     <xsl:if test="count(source)=1">
-                        <a _locID="file2">1 file</a>
+                        <a _locID="file2">1 个文件</a>
                     </xsl:if>
                 </td>
                 <td class="foot">
-					<a _locID="Converted3">Converted</a>:&#32;<xsl:value-of select="count(source/event[@error-level='3' and @description='Converted'])"/><BR />
-					<a _locID="NotConverted">Not converted</a>:&#32;<xsl:value-of select="count(source) - count(source/event[@error-level='3' and @description='Converted'])"/>
+					<a _locID="Converted3">已转换</a>: <xsl:value-of select="count(source/event[@error-level='3' and @description='Converted'])"/><BR/>
+					<a _locID="NotConverted">未转换</a>: <xsl:value-of select="count(source) - count(source/event[@error-level='3' and @description='Converted'])"/>
                 </td>
                 <td class="foot"><xsl:value-of select="count(source/event[@error-level='2'])"/></td>
                 <td class="foot"><xsl:value-of select="count(source/event[@error-level='1'])"/></td>
@@ -156,9 +156,9 @@
     <xsl:template match="UpgradeLog">
         <html>
             <head>
-                <META HTTP-EQUIV="Content-Type" content="text/html; charset=utf-8" />
-                <link rel="stylesheet" href="_UpgradeReport_Files\UpgradeReport.css" />
-                <title _locID="ConversionReport0">Conversion Report&#32;
+                <META HTTP-EQUIV="Content-Type" content="text/html; charset=utf-8"/>
+                <link rel="stylesheet" href="_UpgradeReport_Files\UpgradeReport.css"/>
+                <title _locID="ConversionReport0">转换报告 
                     <xsl:if test="Properties/Property[@Name='LogNumber']">
                         <xsl:value-of select="Properties/Property[@Name='LogNumber']/@Value"/>
                     </xsl:if>
@@ -188,10 +188,10 @@
                 </script>
             </head>
             <body topmargin="0" leftmargin="0" rightmargin="0" onclick="outliner();">
-                <h1 _locID="ConversionReport">Conversion Report - <xsl:value-of select="Properties/Property[@Name='Solution']/@Value"/></h1>
+                <h1 _locID="ConversionReport">转换报告 - <xsl:value-of select="Properties/Property[@Name='Solution']/@Value"/></h1>
 
                 <p><span class="note">
-                <b _locID="TimeOfConversion">Time of Conversion:</b>&#32;&#32;<xsl:value-of select="Properties/Property[@Name='Date']/@Value"/>&#32;&#32;<xsl:value-of select="Properties/Property[@Name='Time']/@Value"/><br/>
+                <b _locID="TimeOfConversion">转换时间:</b>  <xsl:value-of select="Properties/Property[@Name='Date']/@Value"/>  <xsl:value-of select="Properties/Property[@Name='Time']/@Value"/><br/>
                 </span></p>
 
                 <xsl:variable name="SortedEvents">
@@ -221,7 +221,7 @@
                 <table class="note">
                     <tr>
                         <td nowrap="1">
-                            <b _locID="ConversionSettings">Conversion Settings</b>
+                            <b _locID="ConversionSettings">转换设置</b>
                         </td>
                     </tr>
                     <xsl:apply-templates select="Properties"/>

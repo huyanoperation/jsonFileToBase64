@@ -1,53 +1,43 @@
-﻿Build started 2013-5-12 11:54:02.
-     1>Project "C:\work\JsonFileToBase64\jsonFileToBase64.git\trunk\ToCBase64\ToCBase64.vcxproj" on node 2 (rebuild target(s)).
+﻿生成启动时间为 2013/9/14 15:28:19。
+     1>项目“E:\basejsonTest\trunk\ToCBase64\ToCBase64.vcxproj”在节点 2 上(rebuild 个目标)。
      1>_PrepareForClean:
-         Deleting file "Debug\ToCBase64.lastbuildstate".
+         正在删除文件“Debug\ToCBase64.lastbuildstate”。
        InitializeBuildStatus:
-         Creating "Debug\ToCBase64.unsuccessfulbuild" because "AlwaysCreate" was specified.
+         正在创建“Debug\ToCBase64.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
        ClCompile:
-         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt CBase64.cpp json_reader.cpp json_value.cpp json_writer.cpp JsonToBase64main.cpp
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _CONSOLE /Gm /EHsc /RTC1 /MDd /GS /fp:precise /Zc:wchar_t /Zc:forScope /Fo"Debug\\" /Fd"Debug\vc100.pdb" /Gd /TP /analyze- /errorReport:prompt CBase64.cpp json_reader.cpp json_value.cpp json_writer.cpp JsonToBase64main.cpp
          JsonToBase64main.cpp
-     1>c:\work\jsonfiletobase64\jsonfiletobase64.git\trunk\tocbase64\json.h(18): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
-     1>c:\work\jsonfiletobase64\jsonfiletobase64.git\trunk\tocbase64\json.h(66): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
-     1>c:\work\jsonfiletobase64\jsonfiletobase64.git\trunk\tocbase64\json.h(134): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
-     1>c:\work\jsonfiletobase64\jsonfiletobase64.git\trunk\tocbase64\jsontobase64main.cpp(11): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files\microsoft visual studio 10.0\vc\include\stdio.h(234) : see declaration of 'fopen'
-     1>c:\work\jsonfiletobase64\jsonfiletobase64.git\trunk\tocbase64\jsontobase64main.cpp(35): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
-                 c:\program files\microsoft visual studio 10.0\vc\include\stdio.h(371) : see declaration of 'sprintf'
+     1>e:\basejsontest\trunk\tocbase64\json.h(18): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : 参见“fopen”的声明
+     1>e:\basejsontest\trunk\tocbase64\json.h(66): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>e:\basejsontest\trunk\tocbase64\json.h(134): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : 参见“fopen”的声明
+     1>e:\basejsontest\trunk\tocbase64\jsontobase64main.cpp(11): warning C4996: 'fopen': This function or variable may be unsafe. Consider using fopen_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(234) : 参见“fopen”的声明
+     1>e:\basejsontest\trunk\tocbase64\jsontobase64main.cpp(38): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>e:\basejsontest\trunk\tocbase64\jsontobase64main.cpp(48): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
          json_writer.cpp
          json_value.cpp
          json_reader.cpp
          CBase64.cpp
-         Generating Code...
-       ManifestResourceCompile:
-         c:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\ToCBase64.exe.embed.manifest.res" Debug\ToCBase64_manifest.rc 
+         正在生成代码...
        Link:
-         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\work\JsonFileToBase64\jsonFileToBase64.git\trunk\ToCBase64\Debug\ToCBase64.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\ToCBase64.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\work\JsonFileToBase64\jsonFileToBase64.git\trunk\ToCBase64\Debug\ToCBase64.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\work\JsonFileToBase64\jsonFileToBase64.git\trunk\ToCBase64\Debug\ToCBase64.lib" /MACHINE:X86 Debug\ToCBase64.exe.embed.manifest.res
-         Debug\CBase64.obj
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"E:\basejsonTest\trunk\ToCBase64\Debug\ToCBase64.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\ToCBase64.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"E:\basejsonTest\trunk\ToCBase64\Debug\ToCBase64.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"E:\basejsonTest\trunk\ToCBase64\Debug\ToCBase64.lib" /MACHINE:X86 Debug\CBase64.obj
          Debug\json_reader.obj
          Debug\json_value.obj
          Debug\json_writer.obj
          Debug\JsonToBase64main.obj
+         ToCBase64.vcxproj -> E:\basejsonTest\trunk\ToCBase64\Debug\ToCBase64.exe
        Manifest:
-         Deleting file "Debug\ToCBase64.exe.embed.manifest".
-         c:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"Debug\ToCBase64.exe.embed.manifest" /manifest Debug\ToCBase64.exe.intermediate.manifest
-         c:\Program Files\Microsoft SDKs\Windows\v7.0A\bin\rc.exe /nologo /fo"Debug\ToCBase64.exe.embed.manifest.res" Debug\ToCBase64_manifest.rc 
-       LinkEmbedManifest:
-         c:\Program Files\Microsoft Visual Studio 10.0\VC\bin\link.exe /ERRORREPORT:PROMPT /OUT:"C:\work\JsonFileToBase64\jsonFileToBase64.git\trunk\ToCBase64\Debug\ToCBase64.exe" /INCREMENTAL /NOLOGO kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /MANIFEST /ManifestFile:"Debug\ToCBase64.exe.intermediate.manifest" /MANIFESTUAC:"level='asInvoker' uiAccess='false'" /DEBUG /PDB:"C:\work\JsonFileToBase64\jsonFileToBase64.git\trunk\ToCBase64\Debug\ToCBase64.pdb" /SUBSYSTEM:CONSOLE /TLBID:1 /DYNAMICBASE /NXCOMPAT /IMPLIB:"C:\work\JsonFileToBase64\jsonFileToBase64.git\trunk\ToCBase64\Debug\ToCBase64.lib" /MACHINE:X86 Debug\ToCBase64.exe.embed.manifest.res
-         Debug\CBase64.obj
-         Debug\json_reader.obj
-         Debug\json_value.obj
-         Debug\json_writer.obj
-         Debug\JsonToBase64main.obj
-         ToCBase64.vcxproj -> C:\work\JsonFileToBase64\jsonFileToBase64.git\trunk\ToCBase64\Debug\ToCBase64.exe
+         C:\Program Files (x86)\Microsoft SDKs\Windows\v7.0A\bin\mt.exe /nologo /verbose /out:"E:\basejsonTest\trunk\ToCBase64\Debug\ToCBase64.exe.manifest" /manifest Debug\ToCBase64.exe.intermediate.manifest
        FinalizeBuildStatus:
-         Deleting file "Debug\ToCBase64.unsuccessfulbuild".
-         Touching "Debug\ToCBase64.lastbuildstate".
-     1>Done Building Project "C:\work\JsonFileToBase64\jsonFileToBase64.git\trunk\ToCBase64\ToCBase64.vcxproj" (rebuild target(s)).
+         正在删除文件“Debug\ToCBase64.unsuccessfulbuild”。
+         正在对“Debug\ToCBase64.lastbuildstate”执行 Touch 任务。
+     1>已完成生成项目“E:\basejsonTest\trunk\ToCBase64\ToCBase64.vcxproj”(rebuild 个目标)的操作。
 
-Build succeeded.
+生成成功。
 
-Time Elapsed 00:00:06.39
+已用时间 00:00:02.99
